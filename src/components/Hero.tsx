@@ -18,18 +18,12 @@ export function Hero() {
         {/* Profile Photo */}
         <div className="mb-8 flex justify-center">
           <div className="relative h-32 w-32 sm:h-40 sm:w-40 rounded-full overflow-hidden border-4 border-gray-200 bg-gray-100 shadow-lg">
-            {/* Placeholder - replace with actual profile image */}
-            <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-[#1a2332] to-[#2a3a4a] text-white text-4xl font-bold">
-              {SITE.name.split(" ").map((n) => n[0]).join("")}
-            </div>
-            {/* Uncomment when you have a profile image:
             <Image
               src="/images/profile.jpg"
               alt={SITE.name}
               fill
               className="object-cover"
             />
-            */}
           </div>
         </div>
 
