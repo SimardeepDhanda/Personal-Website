@@ -38,13 +38,6 @@ export function StickyNav() {
     return <Monitor className="h-4 w-4" />;
   };
 
-  const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth", block: "start" });
-    }
-  };
-
   if (pathname !== "/") return null;
 
   return (
@@ -73,12 +66,6 @@ export function StickyNav() {
                   {item.label}
                 </Link>
               ))}
-              <button
-                onClick={() => scrollToSection("contact")}
-                className="text-sm font-medium text-gray-700 hover:text-gray-900 transition-colors"
-              >
-                Contact
-              </button>
             </div>
 
             <button

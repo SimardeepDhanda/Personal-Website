@@ -76,8 +76,7 @@ export const PROJECTS: Project[] = [
     ],
     image: "/images/projects/mealmap.png",
     links: [
-      { label: "GitHub", href: "https://github.com/your-handle/mealmap" },
-      { label: "Live", href: "https://your-live-link.com" },
+      { label: "GitHub", href: "https://github.com/SimardeepDhanda/MealMap---University-Diet-Tracker" },
     ],
   },
   {
@@ -101,7 +100,7 @@ export const PROJECTS: Project[] = [
     subtitle: "Clinical Risk Classification Prototype",
     tech: ["Python", "Pandas", "NumPy", "scikit-learn", "Matplotlib"],
     bullets: [
-      "Developed and refined logistic regression and SVM classifiers for EHR data, achieving 91.5% average accuracy and ROC-AUC > 0.90 through feature engineering, preprocessing, and hyperparameter tuning.",
+      "Developed logistic regression and SVM classifiers for EHR data, achieving 91.5% accuracy and > 0.90 ROC-AUC through feature engineering and hyperparameter tuning; earned 2nd place at Canada’s Science Fair",
       "Improved model performance by increasing predictive accuracy by 12% and reducing training time by 25% through null handling, standardization, and targeted feature engineering.",
       "Built a prototype interface to reduce diagnostic turnaround time by 35% by delivering disease-detection alerts from a validated reference database.",
     ],
