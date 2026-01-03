@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { ConditionalNav } from "@/components/ConditionalNav";
-import { Footer } from "@/components/Footer";
+import { ConditionalFooter } from "@/components/ConditionalFooter";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { SITE } from "@/data";
 
@@ -47,7 +47,7 @@ export default function RootLayout({
           <div className="flex min-h-screen flex-col">
             <ConditionalNav />
             <main className="flex-1">{children}</main>
-            <Footer />
+            <ConditionalFooter />
           </div>
         </ThemeProvider>
       </body>

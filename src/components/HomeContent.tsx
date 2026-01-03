@@ -157,33 +157,6 @@ export function HomeContent() {
           </div>
         </Section>
       </ScrollSection>
-
-      {/* Resume Section - Navy */}
-      <ScrollSection id="resume" colorVariant="resume">
-        <Section>
-          <h2 className="text-4xl font-bold text-white mb-8">
-            Resume
-          </h2>
-          <div className="w-full">
-            <div className="rounded-lg overflow-hidden border border-gray-700/30 shadow-lg">
-              <iframe
-                src="/resume.pdf"
-                className="w-full h-[800px] bg-white"
-                title="Resume PDF"
-              />
-            </div>
-            <div className="mt-6 text-center">
-              <a
-                href="/resume.pdf"
-                download
-                className="inline-flex items-center gap-2 px-6 py-3 text-white hover:underline font-medium border border-white/30 rounded-lg hover:bg-white/10 transition-colors"
-              >
-                Download PDF
-              </a>
-            </div>
-          </div>
-        </Section>
-      </ScrollSection>
     </>
   );
 }

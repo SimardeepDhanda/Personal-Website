@@ -37,28 +37,6 @@ export function Hero() {
           {SITE.tagline}
         </p>
 
-        {/* Buttons */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16 animate-fade-in" style={{ animationDelay: "0.2s" }}>
-          <button
-            onClick={() => scrollToSection("projects")}
-            className="px-8 py-3 bg-[#1a2332] text-white rounded-lg font-medium hover:opacity-90 hover:shadow-lg transition-all w-full sm:w-auto"
-          >
-            Projects
-          </button>
-          <button
-            onClick={() => scrollToSection("resume")}
-            className="px-8 py-3 border-2 border-gray-300 text-gray-700 rounded-lg font-medium hover:bg-gray-50 hover:border-gray-400 transition-all w-full sm:w-auto"
-          >
-            Resume
-          </button>
-          <button
-            onClick={() => scrollToSection("experience")}
-            className="px-8 py-3 border-2 border-gray-300 text-gray-700 rounded-lg font-medium hover:bg-gray-50 hover:border-gray-400 transition-all w-full sm:w-auto"
-          >
-            Experience
-          </button>
-        </div>
-
         {/* Down Arrow */}
         <button
           onClick={() => scrollToSection("about")}

@@ -34,10 +34,10 @@ export const SITE = {
   title: "Software Engineering Student",
   tagline: "I build fast, practical software products and love systems that scale.",
   location: "Hamilton, ON",
-  email: "your@email.com",
+  email: "simardhanda1@gmail.com",
   socials: [
-    { label: "GitHub", href: "https://github.com/your-handle" },
-    { label: "LinkedIn", href: "https://www.linkedin.com/in/your-handle/" },
+    { label: "GitHub", href: "https://github.com/SimardeepDhanda" },
+    { label: "LinkedIn", href: "https://www.linkedin.com/in/simardhanda/" },
   ] as Link[],
 }
 
@@ -60,8 +60,8 @@ export const PROJECTS: Project[] = [
     ],
     image: "/images/projects/book-finder.png",
     links: [
-      { label: "GitHub", href: "https://github.com/your-handle/book-finder" },
-      { label: "Live", href: "https://your-live-link.com" },
+      { label: "GitHub", href: "https://github.com/SimardeepDhanda/globalISBNtracker" },
+      { label: "Live", href: "https://book-isbn-tracker.vercel.app/" },
     ],
   },
   {
@@ -91,7 +91,8 @@ export const PROJECTS: Project[] = [
     ],
     image: "/images/projects/voice-flow-trainer.png",
     links: [
-      { label: "GitHub", href: "https://github.com/your-handle/voice-flow-trainer" },
+      { label: "GitHub", href: "https://github.com/SimardeepDhanda/voice-flow-trainer" },
+      { label: "Live", href: "https://convo-assistant.vercel.app/" },
     ],
   },
   {
@@ -106,7 +107,7 @@ export const PROJECTS: Project[] = [
     ],
     image: "/images/projects/ehr-ml.png",
     links: [
-      { label: "GitHub", href: "https://github.com/your-handle/ehr-ml" },
+      { label: "GitHub", href: "https://github.com/SimardeepDhanda/Heart-Failure-Prediction-Model" },
     ],
   },
 ]
@@ -123,7 +124,7 @@ export const EXPERIENCE: Experience[] = [
       "Created user interfaces and visualization dashboards for system diagnostics, enabling faster debugging and improving team collaboration across mechanical, electrical, and software domains.",
     ],
     logo: "/images/orgs/mcmaster-exoskeleton.png",
-    links: [{ label: "Team", href: "https://your-team-link.com" }],
+    links: [{ label: "Team", href: "https://www.macexo.com/" }],
   },
   {
     id: "canada-learning-code",
@@ -156,8 +157,8 @@ export const HIGHLIGHTS = [
 
 // Skills for the home page
 export const SKILLS = {
-  Languages: ["TypeScript", "JavaScript", "Python", "SQL", "HTML", "CSS", "Java"],
-  Frameworks: ["Next.js", "React", "Node.js", "Express", "FastAPI", "Tailwind CSS"],
-  Tools: ["Git", "PostgreSQL", "Supabase", "Vercel", "scikit-learn", "Pandas", "Docker"],
+  Languages: ["Python", "Java", "C++", "JavaScript", "TypeScript", "SQL", "HTML/CSS", "Bash", "MATLAB"],
+  "Frameworks & Libraries": ["React", "FastAPI", "Node.js", "Express.js", "TensorFlow", "NumPy", "Pandas", "Tailwind CSS"],
+  "Tools & Platforms": ["Git", "GitHub", "VS Code", "PyCharm", "Jupyter Notebooks", "PostgreSQL", "Google Cloud Platform (GCP)", "AWS", "Azure", "Vercel"],
 }
 

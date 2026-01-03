@@ -5,17 +5,17 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Moon, Sun, Monitor } from "lucide-react";
 import { useTheme } from "./ThemeProvider";
-import { SITE } from "@/data";
+import { NAV, SITE } from "@/data";
 
 export function StickyNav() {
-  const [isVisible, setIsVisible] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const pathname = usePathname();
   const { theme, setTheme } = useTheme();
 
   useEffect(() => {
     const handleScroll = () => {
-      // Show nav after scrolling past 100vh (hero section)
-      setIsVisible(window.scrollY > window.innerHeight);
+      // Track if scrolled past hero section for styling changes
+      setScrolled(window.scrollY > window.innerHeight);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -45,42 +45,37 @@ export function StickyNav() {
     }
   };
 
-  if (!isVisible || pathname !== "/") return null;
+  if (pathname !== "/") return null;
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 border-b border-gray-200 dark:border-gray-800 bg-white/90 dark:bg-[#0a0a0a]/90 backdrop-blur-sm transition-all duration-300">
+    <nav 
+      className={`fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-300/50 transition-all duration-300 ease-in-out ${
+        scrolled ? "shadow-sm" : "shadow-none"
+      }`}
+    >
       <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
-          <button
-            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          <Link
+            href="/"
             className="text-lg font-semibold text-gray-900 hover:text-[#1a2332] transition-colors"
           >
             {SITE.name}
-          </button>
+          </Link>
 
           <div className="flex items-center gap-6">
             <div className="hidden sm:flex items-center gap-6">
-              <button
-                onClick={() => scrollToSection("projects")}
-                className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors"
-              >
-                Projects
-              </button>
-              <button
-                onClick={() => scrollToSection("experience")}
-                className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors"
-              >
-                Experience
-              </button>
-              <button
-                onClick={() => scrollToSection("resume")}
-                className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors"
-              >
-                Resume
-              </button>
+              {NAV.map((item) => (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className="text-sm font-medium text-gray-700 hover:text-gray-900 transition-colors"
+                >
+                  {item.label}
+                </Link>
+              ))}
               <button
                 onClick={() => scrollToSection("contact")}
-                className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors"
+                className="text-sm font-medium text-gray-700 hover:text-gray-900 transition-colors"
               >
                 Contact
               </button>
@@ -88,7 +83,7 @@ export function StickyNav() {
 
             <button
               onClick={toggleTheme}
-              className="p-2 rounded-lg text-gray-600 hover:bg-gray-100 hover:text-gray-900 transition-colors"
+              className="p-2 rounded-lg text-gray-700 hover:bg-gray-100 hover:text-gray-900 transition-colors"
               aria-label="Toggle theme"
             >
               {getThemeIcon()}
