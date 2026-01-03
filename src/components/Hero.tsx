@@ -19,7 +19,7 @@ export function Hero() {
         <div className="mb-8 flex justify-center">
           <div className="relative h-32 w-32 sm:h-40 sm:w-40 rounded-full overflow-hidden border-4 border-gray-200 bg-gray-100 shadow-lg">
             <Image
-              src="/images/profile.jpg"
+              src="/images/profile.png"
               alt={SITE.name}
               fill
               className="object-cover"

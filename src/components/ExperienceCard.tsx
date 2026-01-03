@@ -12,10 +12,10 @@ interface ExperienceCardProps {
 
 export function ExperienceCard({ experience }: ExperienceCardProps) {
   return (
-    <Card>
-      <div className="flex gap-4">
+    <Card className="p-0 overflow-hidden">
+      <div className="flex flex-col lg:flex-row">
         {experience.logo && (
-          <div className="relative w-12 h-12 flex-shrink-0 rounded-lg overflow-hidden bg-gray-100">
+          <div className="relative w-full lg:w-1/2 h-64 sm:h-80 lg:h-auto aspect-square lg:aspect-auto flex-shrink-0 overflow-hidden bg-gray-100">
             <Image
               src={experience.logo}
               alt={experience.org}
@@ -27,17 +27,17 @@ export function ExperienceCard({ experience }: ExperienceCardProps) {
             />
           </div>
         )}
-        <div className="flex-1">
-          <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 mb-2">
+        <div className="flex-1 p-6 sm:p-8 lg:p-10">
+          <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 mb-4">
             <div>
-              <h3 className="text-lg font-semibold text-gray-900">
+              <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-1">
                 {experience.role}
               </h3>
-              <p className="text-sm font-medium text-gray-700">
+              <p className="text-base sm:text-lg font-medium text-gray-700">
                 {experience.org}
               </p>
             </div>
-            <div className="text-sm text-gray-600">
+            <div className="text-sm sm:text-base text-gray-600">
               {experience.dates}
               {experience.location && (
                 <span className="block sm:inline sm:ml-2">• {experience.location}</span>

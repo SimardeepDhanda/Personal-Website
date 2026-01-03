@@ -16,7 +16,7 @@ export function ExperienceCardCompact({ experience, onClick }: ExperienceCardCom
     <Card className="hover:shadow-md transition-all cursor-pointer group bg-white/10 border-white/20">
         <div className="flex gap-4">
           {experience.logo && (
-            <div className="relative w-12 h-12 flex-shrink-0 rounded-lg overflow-hidden bg-white border border-white/30">
+            <div className="relative w-20 h-20 sm:w-24 sm:h-24 flex-shrink-0 rounded-lg overflow-hidden bg-white border border-white/30">
               <Image
                 src={experience.logo}
                 alt={experience.org}
