@@ -29,7 +29,7 @@ export function Hero() {
 
         {/* Headline */}
         <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-gray-900 mb-4 animate-fade-in">
-          Hi, I'm {SITE.name.split(" ")[0]}
+          Hi, I&apos;m {SITE.name.split(" ")[0]}
         </h1>
 
         {/* Subtitle */}

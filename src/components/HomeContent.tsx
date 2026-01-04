@@ -28,10 +28,10 @@ export function HomeContent() {
           </h2>
           <div className="prose prose-lg max-w-none">
             <p className="text-gray-200 leading-relaxed mb-4 text-lg">
-              I'm a software engineering student focused on building clean, reliable software and steadily growing as a developer. I enjoy working on projects that turn ideas into real products, whether that's building full stack applications, improving system performance, or refining user experiences. I'm always interested in learning new tools and technologies and applying them in practical, thoughtful ways.
+              I&apos;m a software engineering student focused on building clean, reliable software and steadily growing as a developer. I enjoy working on projects that turn ideas into real products, whether that&apos;s building full stack applications, improving system performance, or refining user experiences. I&apos;m always interested in learning new tools and technologies and applying them in practical, thoughtful ways.
             </p>
             <p className="text-gray-200 leading-relaxed text-lg">
-              Outside of software, I train Brazilian jiu jitsu and follow the UFC closely. I enjoy the sport both for the competition and the discipline behind it. I'm also an avid reader, especially fantasy and science fiction, and I'm currently working through the Red Rising series by Pierce Brown. When I want to relax, I usually reach for a video game or a book.
+              Outside of software, I train Brazilian jiu jitsu and follow the UFC closely. I enjoy the sport both for the competition and the discipline behind it. I&apos;m also an avid reader, especially fantasy and science fiction, and I&apos;m currently working through the Red Rising series by Pierce Brown. When I want to relax, I usually reach for a video game or a book.
             </p>
           </div>
         </Section>
@@ -126,7 +126,7 @@ export function HomeContent() {
           </h2>
           <div className="max-w-md">
             <p className="text-lg text-gray-200 mb-6">
-              Feel free to reach out if you'd like to connect or collaborate.
+              Feel free to reach out if you&apos;d like to connect or collaborate.
             </p>
             <div className="space-y-4">
               <a

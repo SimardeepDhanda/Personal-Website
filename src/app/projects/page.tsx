@@ -18,7 +18,7 @@ export default function ProjectsPage() {
             </h1>
           </div>
           <p className="text-xl sm:text-2xl text-gray-300 font-light ml-16 sm:ml-20 mb-6">
-            A collection of software engineering projects I've built.
+            A collection of software engineering projects I&apos;ve built.
           </p>
           <div className="h-px w-full bg-white/20 ml-16 sm:ml-20"></div>
         </div>
